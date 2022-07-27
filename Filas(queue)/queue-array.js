@@ -30,6 +30,9 @@ class Queue {
     }
 
     view() {
+        if(this.isEmpty()){
+            return "Queue is empty";
+        }
         return this.items.join(",");
     }
 }
